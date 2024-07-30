@@ -5,4 +5,5 @@ import me.dio.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long>{
 
+    boolean existsByAccountNumber(String accountNumber);
 }
